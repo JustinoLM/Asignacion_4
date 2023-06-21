@@ -1,0 +1,423 @@
+/* ---- Ajustes generales del documento ---- */
+
+html{
+  width: 100%;
+}
+
+body {
+  background-color: #E9FFFB;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Times New Roman", serif;
+}
+
+p {
+  font-size: 125%;
+  font-family: Arial, sans-serif;
+}
+
+/* --- Esta sección del codigo nos muestra las configuraciones estándar del header y del logo para todas las páginas --- */
+
+header {
+  background-color: #000D6F;
+  background-size: contain;
+  background-blend-mode: lighten;
+  width: 100%;
+  height: 110px;
+  margin: -1;
+  padding: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #000D6F;
+  background-size: contain;
+  background-blend-mode: lighten;
+  background-image: url(Logos/banner.jpeg);
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px;
+}
+
+header h1 {
+  margin: auto;
+  color: black;
+  text-align: center;
+  background-color: white;
+  border-bottom: 5px solid black;
+  opacity: 1;
+}
+
+/* --- Ajustes generales del Body --- */ 
+
+.saludo{
+  text-align: center;
+  text-decoration: underline;
+  background-color: white;
+  margin: auto;
+  padding-bottom: 5px;
+  border-top: 3px solid black;
+}
+
+.separator {
+  width: 90%;
+  padding: 3px;
+  background-color: black;
+  margin: auto;
+}
+
+/* -- Pagina de Inicio -- */
+
+/* - Formato del menu y sus elementos - */
+.seccion-menu {
+  box-shadow: 2px 2px 5px black;
+  flex-direction: column;
+  border: 5px solid black;
+  display: flex;
+  float: left;
+  margin: 10px;
+  height: 50%;
+  padding: 0;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+/* Titulo del menu */
+.menu-box-titulo {
+  text-align: center;
+  width: 100%;
+  border: 1px solid black;
+  background-color: #0093A5;
+  margin: 0;
+  color: white;
+}
+
+.menu-box{
+  text-align: center;
+  width: 100%;
+  border: 1px solid black;
+  background-color: #2C1442;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clase que usamos para senalar la pagina en la que estamos actualmente */
+.menu-box-section{
+  text-align: center;
+  width: 100%;
+  border: 1px solid black;
+  background-color: #FF7171;
+  margin: 0;
+}
+
+/* Manejo de interacciones del  menu */
+
+.menu-box a, .menu-box-section a {
+  margin-left: 10px;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.menu-box:hover {
+  background-color: #028AF7;
+}
+
+/*  - Formato de las columnas de informacion y sue elementos - */
+
+.seccion-columnas {
+  flex-direction: column;
+  display: flex;
+  margin: 5px;
+}
+
+/* Con estas filas podemos separar nuestro espaco en un grid de 2x3 */
+
+.fila-columnas {
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.columna {
+  margin: 2px;
+  width: 35%;
+  border: 5px solid black;
+  box-shadow: 2px 2px 5px black;
+  padding: auto;
+}
+
+/* Interacciones de las columnas */
+
+.seccion-columnas h2 {
+  text-decoration: underline;
+  border: 3px solid black;
+  background-color: white;
+  color: darkred;
+  padding: 20px;
+  width: auto;
+  margin: auto;
+  margin-left: 0;
+  display: inline-block;
+}
+
+.columna a {
+  text-decoration: none;
+  justify-content: center;
+
+}
+
+.columna a h2 {
+  text-align: center;
+  margin: 5px;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+.columna a img {
+  box-shadow: 1px 1px 2.5px lightcoral;
+  border: 2px solid black;
+  width: 95%;
+  height: 200px;
+  margin: 5px;
+}
+
+.columna a .panfleto {
+  box-shadow: 1px 1px 2.5px lightcoral;
+  border: 2px solid black;
+  width: 95%;
+  height: 341px;
+}
+
+.columna a p {
+
+  border: 2px solid black;
+  padding: 2px;
+  color: black;
+  text-align: justify;
+  background-color: white;
+  margin: auto;
+
+}
+
+/* -- Pagina de Calendario -- */
+
+/* - Contenedor secundario */
+
+/* El contenedor secundario lo utilizamos para las siguientes paginas que no utilizan columnas como tal */
+
+.contenedor-secundario{
+  margin-left: 300px;
+  margin-top: 5px;
+
+}
+
+/* Ajustes de la tabla del calendario */
+
+table {
+  margin: 5px;
+  float: center;
+  box-shadow: 2px 2px 5px black;
+  font-family: Courier, monospace;
+}
+
+table, th, td {
+  font-size: 125%;
+  border: 3px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+    background-color: lightblue;
+    text-shadow: 1px 1px 5px lightcoral;
+}
+
+th,td {
+  width: 130px;
+  height: auto;
+}
+
+.fuera-de-mes{
+  background-color: darkslategrey;
+  color: white;
+}
+
+table tr td a {
+  color: darkred;
+  font-weight: bold;
+  text-decoration: none;
+  margin: auto;
+}
+
+.boton {
+  box-shadow: 2px 2px 5px black;
+  font-size: 200%;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 30px 0px;
+  color: black;
+  background-color: lightsteelblue;
+}
+
+.boton:hover {
+  background-color: lightcoral;
+}
+
+/* Interacciones de las tablas */
+
+table tr td:hover {
+  background-color: #FF7171;
+}
+
+.fuera-de-mes:hover{
+  background-color: darkslategrey;
+  color: white;
+}
+
+/* -- Pagina de registros -- */
+
+/* -Ambos estilo se van a utilizar para las 2 paginas de registro */
+
+form{
+  font-family: Georgia, serif;
+}
+
+fieldset{
+  box-shadow: 2px 2px 5px black;
+  margin-right: 50%;
+  border: 3px solid black;
+}
+
+legend {
+  font-size: 200%;
+  background-color: white;
+  border: 1px dotted black;
+}
+
+label, select{
+  font-size: 125%;
+  margin-bottom:20px;
+  margin-right: 30px;
+}
+
+/* Clase para espaciar las checkbox y que esten alineadas */
+
+.checkbox {
+  font-size: 125%;
+  margin-left: 83px;
+  margin-bottom:10px;
+}
+
+/* -- Pagina de soporte -- */
+
+/* - En esta pagina pudimos haber usado el formato de la primera pero decidimos cambiar algunas cosas- */
+
+.columna-soporte{
+  margin: 2px;
+  width: 35%;
+  border: 5px solid black;
+  box-shadow: 2px 2px 5px black;
+  text-align: center;
+  padding: 20px;
+  border: 3px solid black;
+  margin: 10px;
+}
+
+/* Interacciones de la columnas de Soporte */
+
+.columna-soporte p {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: justify;
+  background-color: white;
+  box-shadow: 4px 4px lightcoral;
+}
+
+.columna-soporte img {
+  border-radius: 50%;
+  box-shadow: 8px 8px 2px #160952;
+  height: 250px;
+  width: 250px;
+}
+
+.columna-soporte h2 {
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px lightcoral;
+  height: 250
+}
+
+/* --- Ajustes generales del footer --- */
+
+footer {
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  height: 165px;
+  background-color: #16002A;
+}
+
+.footer-fondo {
+  height: 185px;
+  display: flex;
+  position:absolute;
+}
+
+.logo-footer{
+  margin: 0;
+  padding: 0;
+  opacity: .5;
+}
+
+.logo-footer img{
+  width: 100px;
+  height: 100px;
+}
+
+/* Interacciones */
+
+/* Utilizamos una lista no ordenada para crear la lista de enlaces del footer */
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+footer ul li {
+  margin: 3px;
+  color: #B3ADA1;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #B3ADA1;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
+

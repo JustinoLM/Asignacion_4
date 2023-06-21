@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Registro de estudiantes</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="HOME.html">
+        <img src="Logos/Logo_uni_negro.png">
+      </a>
+    </div>
+
+    <h1>UNIVERSIDAD DEL PUEBLO</h1>
+  </header>
+
+  <h1 class="saludo"> Registro de estudiantes </h1>
+  <hr class="separator">
+
+  <section>
+    <div class="seccion-menu">
+      <div class="menu-box-titulo">
+        <h2> Menu </h2>
+      </div>
+
+      <div class="menu-box">
+        <a href="HOME.html">
+          <h2> Inicio </h2>
+        </a>
+      </div>
+
+      <div class="menu-box">
+        <a href="CALENDARIO.html">
+          <h2> Calendario </h2>
+        </a>
+      </div>
+
+      <div class="menu-box-section">
+        <a href="REG_ESTUDIANTE.html">
+          <h2> Registro de estudiantes </h2>
+        </a>
+      </div>
+
+      <div class="menu-box">
+        <a href="REG_DOCENTE.html">
+          <h2> Registro de docentes </h2>
+        </a>
+      </div>
+
+      <div class="menu-box">
+        <a href="SOPORTE.html">
+          <h2> Soporte </h2>
+        </a>
+      </div>
+    </div>
+
+    <div class="contenedor-secundario">
+
+      <p>
+        Registro de estudiantes para los diferentes cursos dentro de la Universidad del Pueblo.<br>
+        Importante rellenar todos los datos o sino no se enviará la información.
+      </p>
+
+      <form action="JSP_ESTUDIANTES.jsp" method="get">
+        <fieldset>
+          <legend> Datos personales </legend><br>
+
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required><br><br>
+
+          <label for="cedula">Cedula:</label>
+          <input type="text" id="cedula" name="cedula" required><br>
+          <label>(formato: 00-0000-0000)</label><br><br>
+
+          <label for="materia">Año lectivo:</label>
+          <input type="text" id="año" name="año" required><br><br>
+        </fieldset><br><br>
+
+        <fieldset>
+          <legend> Datos Academicos </legend><br>
+
+          <label for="provincia">Centro Regional:</label>
+          
+          <select id="provincia" name="provincia" required>
+            <option value="panama">Panamá</option>
+            <option value="colon">Colón</option>
+            <option value="cocle">Coclé</option>
+            <option value="chiriqui">Chiriqui</option>
+            <option value="veraguas">Veraguas</option>
+            <option value="bocas">Bocas del Toro</option>
+            <option value="panama_oeste">Panamá Oeste</option>
+            <option value="los_santos">Los Santos</option>
+          </select><br>
+
+          <label>Cursos a tomar: </label> <br>
+
+          <input class="checkbox" type="checkbox" id="soldadura" name="curso" value="soldadura">
+          <label for="soldadura"> Soldadura</label><br>
+
+          <input class="checkbox" type="checkbox" id="electronica" name="curso" value="electronica">
+          <label for="electronica"> Electronica</label><br>
+
+          <input class="checkbox" type="checkbox" id="cocina" name="curso" value="cocina">
+          <label for="cocina"> Cocina</label><br>
+
+          <input class="checkbox" type="checkbox" id="programacion" name="curso" value="programacion">
+          <label for="programacion"> Programacion</label><br><br>
+
+          <label for="indice">Índice:</label>
+          <input type="text" id="indice" name="indice" pattern="[0-3].[0-9]" required>
+        </fieldset><br>
+
+        <input class="boton" type="submit" value="Enviar"><br><br><br>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="logo-footer">
+      <a href="HOME.html">
+        <img src="Logos/logo_uni_blanco_2.png">
+      </a>
+    </div>
+
+    <ul>
+      <li><a href="HOME.html">Inicio</a></li>
+      <li><a href="CALENDARIO.html">Calendario</a></li>
+      <li><a href="REG_DOCENTE.html">Registro de Docentes</a></li>
+      <li><a href="SOPORTE.html">Soporte</a></li>
+      <br>
+      <li class="copirait">Copyright (c) 2023 Universo del Pueblo</li>
+      <li class="copirait">All Rights Reserved</li>
+
+    </ul>
+  </footer>
+</body>
+</html>
